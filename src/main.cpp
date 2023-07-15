@@ -74,7 +74,7 @@ void setup()
       APP_CPU_NUM); // Core su sui eseguire il task
 
   // Elimina il task con "Setup e Loop"
-  //vTaskDelete(NULL);
+  vTaskDelete(NULL);
 }
 
 void loop()
