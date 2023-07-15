@@ -7,7 +7,7 @@
  * Il Task A ha priorità alta; il Task B ha priorità bassa.
  * 
  * La soluzione qui proposta non può funzionare, poiché i due task finiscono col bloccarsi a vicenda
- * dopo aver acquisito il loro primo mutex (sitazione di deadlock). 
+ * dopo aver acquisito il loro primo mutex (situazione di deadlock). 
  *
  * Nota: nel file soc.h sono definiti i riferimenti ai due core della ESP32:
  *   #define PRO_CPU_NUM (0)
