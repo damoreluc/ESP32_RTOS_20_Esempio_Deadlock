@@ -23,10 +23,10 @@ void doTaskA(void *parameters)
       }
     }
 
-    // Prende il mutex 1 (la pausa di 1ms induce il deadlock con l'altro task)
+    // Prende il mutex 1 (la pausa di 3ms induce il deadlock con l'altro task)
     xSemaphoreTake(mutex_1, portMAX_DELAY);
     Serial.println("Il Task A prende il mutex 1");
-    vTaskDelay(pdMS_TO_TICKS(1));
+    vTaskDelay(pdMS_TO_TICKS(3));
 
     // Prende il mutex 2
     xSemaphoreTake(mutex_2, portMAX_DELAY);
